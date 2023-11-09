@@ -33,3 +33,9 @@ $ npm run start:prod
 # development
 $ docker-compose up -d
 ```
+
+## Para la conexión de nest con mongo, instalar mongoose (ver doc de nest)
+
+```bash
+$ npm i @nestjs/mongoose mongoose
+```
