@@ -7,6 +7,9 @@ import { UpdatePokemonDto } from './dto/update-pokemon.dto';
 export class PokemonController {
   constructor(private readonly pokemonService: PokemonService) {}
 
+  // Para los estados:
+  // @HttpCode(HttpStatus.CREATED)
+
   @Post()
   create(@Body() createPokemonDto: CreatePokemonDto) {
     return this.pokemonService.create(createPokemonDto);
