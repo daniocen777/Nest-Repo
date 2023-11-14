@@ -11,6 +11,11 @@ async function bootstrap() {
     new ValidationPipe({
       whitelist: true, // solo toma valores del dto en el request (remueve data basura)
       forbidNonWhitelisted: true, // Para que tome como error valores que no estan en el dto
+      // transformar los queryParams al objeto requerido
+      transform: true,
+      transformOptions: {
+        enableImplicitConversion: true
+      }
     })
   );
   await app.listen(3000);
