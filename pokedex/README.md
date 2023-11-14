@@ -39,3 +39,9 @@ $ docker-compose up -d
 ```bash
 $ npm i @nestjs/mongoose mongoose
 ```
+
+## Para las peticiones http externas, se usará "axios" (fetch desde node 18)
+
+```bash
+$ npm i axios
+```
